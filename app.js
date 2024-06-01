@@ -1,6 +1,5 @@
 const express = require('express')
 const swagger = require('./swagger')
-const todo = require('./todo')
 const todoRoutes = require('./routes/todo.routes');
 
 const app = express()
@@ -12,12 +11,6 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/todos', todoRoutes);
-
-// app.get('/todos', todo.getAll)
-// app.post('/todos', todo.create)
-// app.get('/todos/:id', todo.getById)
-// app.put('/todos/:id', todo.update)
-// app.delete('/todos/:id', todo.delete)
 
 swagger(app)
 
