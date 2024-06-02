@@ -4,19 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "pnpm run start:prod",
-    "dev": "pnpm run start:dev",
-    "start:prod": "node app.js",
-    "start:dev": "pnpm exec nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
-    "fs": "0.0.1-security",
-    "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.0"
+    "fs": "0.0.1-security"
   },
   "devDependencies": {
     "nodemon": "^3.1.2"
